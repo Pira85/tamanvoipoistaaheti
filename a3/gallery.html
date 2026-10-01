@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+    Centria Edu - Basics of Web Development
+    Gallery page
+
+    Author: Mika Pirttimäki
+    Last modified: 2026-10-01
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mika Pirttimäki">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Gallery | Centria Edu</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    centria <span>edu</span>
+                </div>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html" class="active" aria-current="page">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-intro">
+            <div class="container">
+                <span class="label">Gallery</span>
+                <h1>My study environment</h1>
+                <p>
+                    Three photos I have taken myself while studying web development.
+                </p>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="container">
+
+                <div class="gallery">
+
+                    <figure class="gallery-item">
+                        <img src="images/tyopiste.jpg"
+                            alt="White standing desk with a vertical monitor and a curved widescreen monitor, a keyboard, a plant and a black office chair">
+                        <figcaption>
+                            <h2>My workspace</h2>
+                            <p>My desk with two monitors, where I write my HTML and CSS code.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="images/koodi-naytolla.jpg"
+                            alt="Close-up of a monitor showing the HTML code of this website in Visual Studio Code">
+                        <figcaption>
+                            <h2>Code on the screen</h2>
+                            <p>Editing this website in Visual Studio Code.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="images/muistiinpanot.jpg"
+                            alt="Monitor showing a notepad app with the text Web-kehitys muistiinpanoja and an almost empty page">
+                        <figcaption>
+                            <h2>Notes</h2>
+                            <p>My web development notes are just getting started.</p>
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+                <a href="index.html" class="button">Back to home page</a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Centria Edu</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
