@@ -1,169 +1,63 @@
+<!DOCTYPE html>
 <!--
     Centria Edu - Basics of Web Development
+    Repository front page with links to the assignments
 
-    Original author: Ville Heikkiniemi
-    Modified by: Mika Pirttimäki
-    Last modified: 2026-09-17
-
-    Based on the original course template.
+    Author: Mika Pirttimäki
+    Last modified: 2026-10-01
 -->
-
-<!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Ville Heikkiniemi">
+    <meta name="author" content="Mika Pirttimäki">
 
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
 
-    <title>Centria Edu | Basics of Web Development</title>
+    <title>Web-kehityksen perusteet | Mika Pirttimäki</title>
+
+    <style>
+        body {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 3rem 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #1e1e1e;
+        }
+
+        h1 {
+            margin-bottom: 1.5rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+        }
+
+        a {
+            color: #e10e49;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
 
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    centria <span>edu</span>
-                </div>
+    <h1>Web-kehityksen perusteet</h1>
 
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#topics">Topics</a></li>
-                    <li><a href="#learning">About</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <p>Mika Pirttimäen tehtävät:</p>
 
-    <main>
-
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-
-                    <span class="label">Basics of Web Development</span>
-
-                    <h1>
-                        Learn how the web works.
-                    </h1>
-
-                    <p>
-                        Start from HTML and CSS and gradually build modern,
-                        responsive and interactive web applications.
-                    </p>
-
-                    <a href="#topics" class="button">
-                        Start learning
-                    </a>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="topics" id="topics">
-            <div class="container">
-
-                <h2>What we will learn</h2>
-
-                <div class="cards">
-
-                    <article class="card">
-                        <h3>HTML</h3>
-
-                        <p>
-                            Learn how to structure web pages using semantic HTML.
-                        </p>
-                    </article>
-
-                    <article class="card">
-                        <h3>CSS</h3>
-
-                        <p>
-                            Learn how to style layouts, colors, typography and
-                            responsive interfaces.
-                        </p>
-                    </article>
-
-                    <article class="card" id="learning">
-                        <h3>Mitä olen oppinut</h3>
-
-                        <p>
-                            Olen oppinut käyttämään GitHubia projektien
-                            tallentamiseen ja muutosten hallintaan. Olen myös
-                            oppinut tekemään committeja ja lähettämään muutokset
-                            GitHubiin Gitin avulla.
-                        </p>
-
-                        <p>
-                            Olen oppinut käyttämään Visual Studio Codea HTML- ja
-                            CSS-tiedostojen muokkaamiseen sekä verkkosivujen
-                            kehittämiseen ja testaamiseen.
-                        </p>
-
-                        <ul>
-                            <li>Git-repositorion käyttäminen</li>
-                            <li>Muutosten lisääminen ja commitointi</li>
-                            <li>Muutosten lähettäminen GitHubiin</li>
-                            <li>HTML- ja CSS-tiedostojen muokkaaminen Visual Studio Codessa</li>
-                            <li>Verkkosivun testaaminen Live Serverin avulla</li>
-                        </ul>
-
-                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                            Siirry GitHubiin
-                        </a>
-                    </article>
-                    <article class="card" id="learning">
-                        <h3>What I have learned</h3>
-
-                        <p>
-                            I have learned how to use GitHub for storing projects
-                            and managing changes. I have also learned how to make
-                            commits and push changes to GitHub using Git.
-                        </p>
-
-                        <p>
-                            I have learned how to use Visual Studio Code for
-                            editing HTML and CSS files, as well as developing and
-                            testing web pages.
-                        </p>
-
-                        <ul>
-                            <li>Using a Git repository</li>
-                            <li>Adding changes and committing</li>
-                            <li>Pushing changes to GitHub</li>
-                            <li>Editing HTML and CSS files in Visual Studio Code</li>
-                            <li>Testing web pages using Live Server</li>
-                        </ul>
-                        //pictures section
-                        <article class="card">
-                            <h3>A moment from my project</h3>
-                            <p>
-                                This image shows what I have been working on!
-                            </p>
-                            <img src="images\tekoalykuva.png" alt="Every day it's like this" />               
-                        </article>
-                        
-                        //Video section
-                        <article class="card">
-                        <h2>Hyvä video aiheesta</h2>
-                        <p>Videolla lisää kotisivujen tekemisestä.</p>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ss_3M5VhaYA?si=KcB52KSra6Bb_6T6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </article>
-                    </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Centria Edu</p>
-        </div>
-    </footer>
+    <ul>
+        <li><a href="a1/">A1 – HTML &amp; CSS</a> (<a href="a1/s4/">s4</a>)</li>
+        <li><a href="a2/">A2 – Kuva ja video sivulla</a></li>
+        <li><a href="a3/">A3 – Etusivu ja kuvagalleria</a></li>
+    </ul>
 
 </body>
 
