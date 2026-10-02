@@ -1,0 +1,168 @@
+/*
+    Centria Edu - Basics of Web Development
+    S9 - Repositorion koontisivun tyylit
+
+    Original template: OpenAI / ChatGPT
+    Modified by: Mika Pirttimäki
+    Last modified: 2026-10-02
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    color: #16302c;
+    background-color: #f2f7f5;
+}
+
+.container {
+    width: min(1100px, 92%);
+    margin-inline: auto;
+}
+
+/* Ylätunniste */
+
+.site-header {
+    padding-block: 3rem;
+    color: #ffffff;
+    background-color: #10302e;
+    border-bottom: 6px solid #0f7b6c;
+}
+
+.eyebrow {
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #9fe3d6;
+}
+
+h1 {
+    max-width: 22ch;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.15;
+}
+
+.intro {
+    max-width: 60ch;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-underline-offset: 0.25em;
+}
+
+nav a:hover {
+    color: #9fe3d6;
+}
+
+/* Harjoitusosiot */
+
+main {
+    padding-block: 2rem 3rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    margin-bottom: 0.25rem;
+}
+
+/* CSS Grid -korttiasettelu */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border: 1px solid #cfe3dd;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px rgba(16, 48, 46, 0.06);
+    overflow-wrap: anywhere;
+}
+
+.card:hover {
+    border-color: #0f7b6c;
+    box-shadow: 0 6px 16px rgba(16, 48, 46, 0.12);
+}
+
+.task-id {
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: #0f7b6c;
+}
+
+.card h3 {
+    margin-block: 0.5rem;
+}
+
+.card-link {
+    align-self: flex-start;
+    margin-top: auto;
+    padding: 0.65rem 1rem;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    background-color: #0f7b6c;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.card-link:hover {
+    background-color: #0b5f54;
+}
+
+a:focus-visible {
+    outline: 3px solid #b4530a;
+    outline-offset: 4px;
+}
+
+/* Alatunniste */
+
+.site-footer {
+    padding-block: 1.5rem;
+    border-top: 1px solid #cfe3dd;
+    background-color: #ffffff;
+}
+
+.site-footer p {
+    margin-block: 0.25rem;
+}
+
+/* Kapeammilla näytöillä kortit kahteen ja lopuksi yhteen sarakkeeseen */
+
+@media (max-width: 900px) {
+    .card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}

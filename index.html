@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <!--
     Centria Edu - Basics of Web Development
-    Repository front page with links to the assignments
+    S9 - Repositorion koontisivu
 
-    Author: Mika Pirttimäki
-    Last modified: 2026-10-01
+    Original template: OpenAI / ChatGPT
+    Modified by: Mika Pirttimäki
+    Last modified: 2026-10-02
 -->
 <html lang="fi">
 
@@ -12,52 +13,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Mika Pirttimäki">
+    <meta name="description" content="Mika Pirttimäen web-kehityksen perusteiden harjoitukset koottuna yhdelle sivulle.">
 
-    <link rel="icon" href="favicon.ico">
+    <title>Web-kehityksen harjoitukset – Mika Pirttimäki</title>
 
-    <title>Web-kehityksen perusteet | Mika Pirttimäki</title>
-
-    <style>
-        body {
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 3rem 1rem;
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-            color: #1e1e1e;
-        }
-
-        h1 {
-            margin-bottom: 1.5rem;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 0.8rem;
-        }
-
-        a {
-            color: #e10e49;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Web-kehityksen perusteet</h1>
+    <header class="site-header">
+        <div class="container">
+            <p class="eyebrow">Basics of Web Development</p>
 
-    <p>Mika Pirttimäen tehtävät:</p>
+            <h1>Omat web-kehityksen harjoitukseni</h1>
 
-    <ul>
-        <li><a href="a1/">A1 – HTML &amp; CSS</a> (<a href="a1/s4/">s4</a>)</li>
-        <li><a href="a2/">A2 – Kuva ja video sivulla</a></li>
-        <li><a href="a3/">A3 – Etusivu ja kuvagalleria</a></li>
-    </ul>
+            <p class="intro">
+                Olen Mika Pirttimäki ja opiskelen web-kehityksen perusteita
+                Centria-ammattikorkeakoulussa. Tälle sivulle olen koonnut
+                kurssilla tekemäni harjoitukset: aloitin HTML-rakenteesta ja
+                erillisistä CSS-tiedostoista ja olen edennyt kuviin, videoihin
+                sekä responsiiviseen monisivuiseen sivustoon. Jokaisesta
+                harjoituksesta on alla oma kortti, josta pääsee suoraan
+                tehtävän etusivulle.
+            </p>
+
+            <nav aria-label="Harjoitusosiot">
+                <a href="#s-tehtavat">S-tehtävät</a>
+                <a href="#a-tehtavat">A-tehtävät</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="s-tehtavat" aria-labelledby="s-otsikko">
+            <h2 id="s-otsikko">S-tehtävät</h2>
+
+            <p>Tuntiharjoitukset ja niissä harjoitellut taidot.</p>
+
+            <div class="card-grid">
+
+                <article class="card">
+                    <p class="task-id">S4</p>
+
+                    <h3>Semanttinen rakenne ja erillinen tyylitiedosto</h3>
+
+                    <p>
+                        Harjoittelin sivun jakamista semanttisiin osiin
+                        (header, main, section ja footer) sekä tyylien
+                        siirtämistä omaan style.css-tiedostoon.
+                    </p>
+
+                    <a class="card-link" href="s4/index.html">Avaa S4</a>
+                </article>
+
+                <article class="card">
+                    <p class="task-id">S6</p>
+
+                    <h3>Kuva ja video sivulla</h3>
+
+                    <p>
+                        Harjoittelin kuvan lisäämistä img-elementillä ja
+                        alt-tekstillä sekä YouTube-videon upottamista
+                        iframe-elementin avulla.
+                    </p>
+
+                    <a class="card-link" href="s6/index.html">Avaa S6</a>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="a-tehtavat" aria-labelledby="a-otsikko">
+            <h2 id="a-otsikko">A-tehtävät</h2>
+
+            <p>Arvioitavat tehtävät ja niissä osoitettu osaaminen.</p>
+
+            <div class="card-grid">
+
+                <article class="card">
+                    <p class="task-id">A1</p>
+
+                    <h3>HTML-rakenteen korjaaminen</h3>
+
+                    <p>
+                        Korjasin valmiin sivupohjan HTML-virheet, erotin tyylit
+                        omaan CSS-tiedostoonsa ja lisäsin sivulle faviconin.
+                        Lopuksi tarkistin sivun W3C-validaattorilla.
+                    </p>
+
+                    <a class="card-link" href="a1/index.html">Avaa A1</a>
+                </article>
+
+                <article class="card">
+                    <p class="task-id">A2</p>
+
+                    <h3>Kuva ja video sivulla</h3>
+
+                    <p>
+                        Lisäsin sivulle oman kuvan kuvaavalla alt-tekstillä ja
+                        upotin aiheeseen liittyvän YouTube-videon. Harjoittelin
+                        samalla mediasisällön sovittamista sivun asetteluun.
+                    </p>
+
+                    <a class="card-link" href="a2/index.html">Avaa A2</a>
+                </article>
+
+                <article class="card">
+                    <p class="task-id">A3</p>
+
+                    <h3>Etusivu ja kuvagalleria</h3>
+
+                    <p>
+                        Rakensin kaksisivuisen sivuston, jossa on etusivu ja
+                        kuvagalleria. Galleriassa on kolme itse ottamaani
+                        valokuvaa figure- ja figcaption-elementeissä, ja sivujen
+                        välillä liikutaan suhteellisilla linkeillä.
+                    </p>
+
+                    <a class="card-link" href="a3/index.html">Avaa A3</a>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Original template: OpenAI / ChatGPT</p>
+            <p>Modified by: Mika Pirttimäki</p>
+        </div>
+    </footer>
 
 </body>
 
